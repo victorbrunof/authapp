@@ -1,3 +1,10 @@
+import { AuthProvider } from './contexts/auth';
+import { Routes } from './routes';
+
 export function App() {
-  return <h2>initial commit</h2>;
+  return (
+    <AuthProvider>
+      <Routes />;
+    </AuthProvider>
+  );
 }
