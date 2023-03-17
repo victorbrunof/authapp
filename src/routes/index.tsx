@@ -1,6 +1,10 @@
 import { SignRoutes } from './SignRoutes';
 import { OtherRoutes } from './OtherRoutes';
+import { useContext } from 'react';
+import { useAuth } from '../contexts/auth';
 
 export function Routes() {
-  return <SignRoutes />;
+  const { signed } = useAuth();
+
+  return signed ? <OtherRoutes /> : <SignRoutes />;
 }

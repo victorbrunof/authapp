@@ -1,19 +1,10 @@
 {
   "logins": [
     {
-      "token": "bdfecc2c-2181-403e-9ae7-10c7145eab1f",
+      "id": "440b6a87-c891-4585-8bd2-6a6b5cc1cf4a",
       "email": "example@email.com",
-      "password": "123456"
-    },
-    {
-      "id": "9c806a2a-3c5e-4ec2-972e-70f441458460",
-      "email": "example@email.com",
-      "password": "123456"
-    },
-    {
-      "id": "ceeaa310-936c-480f-bc04-2a6ff6f08a0f",
-      "email": "example@email.com",
-      "password": "123456"
+      "password": "123456",
+      "token": "553534fd-3453-4133-a240-71d0ffac2c30"
     }
   ]
 }
