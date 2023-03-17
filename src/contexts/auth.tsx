@@ -26,14 +26,14 @@ export function AuthProvider({ children }: any) {
     setUser(response.data);
     api.defaults.headers.Authorization = `Baerer ${response.data.token}`;
     localStorage.setItem('@App:user', JSON.stringify(response.data.email));
-    localStorage.setItem('@App:user', JSON.stringify(response.data.token));
+    localStorage.setItem('@App:token', JSON.stringify(response.data.token));
   }
 
   function Logout() {
     setUser(null);
 
-    sessionStorage.removeItem('@App:user');
-    sessionStorage.removeItem('@App:token');
+    localStorage.removeItem('@App:user');
+    localStorage.removeItem('@App:token');
   }
 
   useEffect(() => {
