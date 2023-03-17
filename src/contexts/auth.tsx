@@ -25,20 +25,20 @@ export function AuthProvider({ children }: any) {
     });
     setUser(response.data);
     api.defaults.headers.Authorization = `Baerer ${response.data.token}`;
-    localStorage.setItem('@App:user', JSON.stringify(response.data.email));
-    localStorage.setItem('@App:token', JSON.stringify(response.data.token));
+    sessionStorage.setItem('@App:user', JSON.stringify(response.data.email));
+    sessionStorage.setItem('@App:token', JSON.stringify(response.data.token));
   }
 
   function Logout() {
     setUser(null);
 
-    localStorage.removeItem('@App:user');
-    localStorage.removeItem('@App:token');
+    sessionStorage.removeItem('@App:user');
+    sessionStorage.removeItem('@App:token');
   }
 
   useEffect(() => {
-    const storagedUser = localStorage.getItem('@App:user');
-    const storagedToken = localStorage.getItem('@App:token');
+    const storagedUser = sessionStorage.getItem('@App:user');
+    const storagedToken = sessionStorage.getItem('@App:token');
 
     if (storagedToken && storagedUser) {
       setUser(JSON.parse(storagedUser));
