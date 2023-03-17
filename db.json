@@ -5,6 +5,12 @@
       "email": "example@email.com",
       "password": "123456",
       "token": "553534fd-3453-4133-a240-71d0ffac2c30"
+    },
+    {
+      "id": "8a2c118c-78e1-4f70-88b7-432234dda2ec",
+      "email": "example@email.com",
+      "password": "123456",
+      "token": "62a952a7-c6df-4f5f-9338-c0ad93670270"
     }
   ]
 }

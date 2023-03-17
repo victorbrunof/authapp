@@ -1,11 +1,10 @@
-import { useContext, useState } from 'react';
-import { AuthContext } from '../../contexts/auth';
+import { useAuth } from '../../contexts/auth';
 
 export function Login() {
-  const context = useContext(AuthContext);
+  const { Login } = useAuth();
 
   function handleLogin() {
-    context.Login();
+    Login();
   }
 
   return (
