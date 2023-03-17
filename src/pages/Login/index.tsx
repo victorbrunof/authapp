@@ -1,10 +1,12 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { AuthContext } from '../../contexts/auth';
 
 export function Login() {
   const context = useContext(AuthContext);
-  console.log(context);
-  function handleLogin() {}
+
+  function handleLogin() {
+    context.Login();
+  }
 
   return (
     <div>

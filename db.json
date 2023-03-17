@@ -1,0 +1,19 @@
+{
+  "logins": [
+    {
+      "token": "bdfecc2c-2181-403e-9ae7-10c7145eab1f",
+      "email": "example@email.com",
+      "password": "123456"
+    },
+    {
+      "id": "9c806a2a-3c5e-4ec2-972e-70f441458460",
+      "email": "example@email.com",
+      "password": "123456"
+    },
+    {
+      "id": "ceeaa310-936c-480f-bc04-2a6ff6f08a0f",
+      "email": "example@email.com",
+      "password": "123456"
+    }
+  ]
+}
